@@ -80,5 +80,9 @@ M574 Z1 P"!io3.in" S1 ; configure Z axis endstop
 M563 P0 D0 H1:2 F0 ; create tool #0
 M568 P0 R0 S0      ; set initial tool #0 active and standby temperatures to 0C
 
+; Pins
+M950 P1 C"out7"
+
+
 ; Miscellaneous
 T0 ; select first tool

@@ -1,0 +1,11 @@
+if !exists(global.P2_state)
+    global P2_state = false  ; Create the variable if it doesn't exist
+
+if global.P2_state
+    M42 P2 S0      ; Turn off the pin
+    set global.P2_state = false
+    echo "P2 (out8) turned OFF"
+else
+    M42 P2 S1      ; Turn on the pin
+    set global.P2_state = true
+    echo "P2 (out8) turned ON"
