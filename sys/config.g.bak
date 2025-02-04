@@ -82,6 +82,7 @@ M568 P0 R0 S0      ; set initial tool #0 active and standby temperatures to 0C
 
 ; Pins
 M950 P1 C"out7"
+M950 P2 C"out8"
 
 
 ; Miscellaneous
