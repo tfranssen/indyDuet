@@ -50,7 +50,7 @@ M308 S3 P"1.temp0" Y"pt1000" A"Inlet"              ; configure sensor #3
 ; Heaters
 M950 H0 C"out1" T0                ; create bed heater
 M143 H0 P0 T0 C0 S140 A0          ; configure heater monitor #0 for bed heater
-M307 H0 R0.5 D5.5 E1.35 K0.56 B1  ; configure model of bed heater
+M307 H0 R0.2 D5.5 E1.35 K0.56 B1  ; configure model of bed heater
 
 M950 H2 C"1.out7" T1              ; create heater #2
 M143 H2 P0 T1 C0 S285 A0          ; configure heater monitor #0 for heater #2
