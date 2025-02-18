@@ -34,7 +34,7 @@ M569.1 P74.0 T3 ; driver 74.0 has a magnetic encoder
 ; Axes
 M584 X71.0 Y70.0 Z72.0:73.0 E74.0; set axis mapping
 M350 X16 Y16 Z16 E16 I1 ; configure microstepping with interpolation
-M906 X800 Y800 Z3000 E4000 ; set axis driver currents
+M906 X800 Y800 Z5000 E4000 ; set axis driver currents
 M92 X32 Y32 Z1290 E420; configure steps per mm
 M208 X0:550 Y0:550 Z0:500 ; set minimum and maximum axis limits
 M566 X2000 Y2000 Z60 E120; set maximum instantaneous speed changes (mm/min)
