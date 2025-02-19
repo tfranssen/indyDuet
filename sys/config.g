@@ -12,29 +12,29 @@ M550 P"indyprinter1" ; set hostname
 ; Wait a moment for the CAN expansion boards to become available
 G4 S2
 
+
+; Closed-Loop Drivers
+M569.1 P70.0 T3 E2:4 R100 I0 D0 ; driver 70.0 has a magnetic encoder
+M569.1 P71.0 T3 E2:4 R100 I0 D0 ; driver 71.0 has a magnetic encoder
+M569.1 P72.0 T3 E2:4 R100 I0 D0 ; driver 72.0 has a magnetic encoder
+M569.1 P73.0 T3 E2:4 R100 I0 D0 ; driver 73.0 has a magnetic encoder
+M569.1 P74.0 T3 E2:4 R100 I0 D0 ; driver 74.0 has a magnetic encoder
+
 ; Smart Drivers
-M569 P0.0 S1 D2 ; driver 0.0 goes forwards (extruder 0)
-M569 P70.0 S0 D2 ; driver 70.0 goes backwards (X axis)
-M569 P71.0 S1 D2 ; driver 71.0 goes forwards (Y axis)
-M569 P72.0 S0 D2 ; driver 72.0 goes backwards (Z axis)
-M569 P73.0 S0 D2 ; driver 73.0 goes backwards (Z axis)
-M569 P74.0 S1 D2 ; driver 74.0 goes forwards (extruder 0)
+M569 P70.0 S0 D5 ; driver 70.0 goes backwards (X axis)
+M569 P71.0 S1 D5 ; driver 71.0 goes forwards (Y axis)
+M569 P72.0 S0 D5 ; driver 72.0 goes backwards (Z axis)
+M569 P73.0 S0 D5 ; driver 73.0 goes backwards (Z axis)
+M569 P74.0 S1 D5 ; driver 74.0 goes forwards (extruder 0)
 
 ; Motor Idle Current Reduction
 M906 I30 ; set motor current idle factor
 M84 S30 ; set motor current idle timeout
 
-; Closed-Loop Drivers
-M569.1 P70.0 T3 ; driver 70.0 has a magnetic encoder
-M569.1 P71.0 T3 ; driver 71.0 has a magnetic encoder
-M569.1 P72.0 T3 ; driver 72.0 has a magnetic encoder
-M569.1 P73.0 T3 ; driver 73.0 has a magnetic encoder
-M569.1 P74.0 T3 ; driver 74.0 has a magnetic encoder
-
 ; Axes
 M584 X71.0 Y70.0 Z72.0:73.0 E74.0; set axis mapping
 M350 X16 Y16 Z16 E16 I1 ; configure microstepping with interpolation
-M906 X800 Y800 Z5000 E4000 ; set axis driver currents
+M906 X800 Y800 Z2500 E4000 ; set axis driver currents
 M92 X32 Y32 Z1290 E420; configure steps per mm
 M208 X0:550 Y0:550 Z0:500 ; set minimum and maximum axis limits
 M566 X2000 Y2000 Z60 E120; set maximum instantaneous speed changes (mm/min)
