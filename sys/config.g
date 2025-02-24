@@ -14,9 +14,9 @@ G4 S2
 
 
 ; Closed-Loop Drivers
-M569.1 P70.0 T3 E2:4 R100 I0 D0 ; driver 70.0 has a magnetic encoder
-M569.1 P71.0 T3 E2:4 R100 I0 D0 ; driver 71.0 has a magnetic encoder
-M569.1 P72.0 T3 E2:4 R100 I0 D0 ; driver 72.0 has a magnetic encoder
+M569.1 P70.0 T3 E5:9 R100 I0 D0 ; driver 70.0 has a magnetic encoder
+M569.1 P71.0 T3 E5:9 R100 I0 D0 ; driver 71.0 has a magnetic encoder
+M569.1 P72.0 T3 E5:9 R100 I0 D0 ; driver 72.0 has a magnetic encoder
 M569.1 P73.0 T3 E2:4 R100 I0 D0 ; driver 73.0 has a magnetic encoder
 M569.1 P74.0 T3 E2:4 R100 I0 D0 ; driver 74.0 has a magnetic encoder
 
@@ -35,11 +35,11 @@ M84 S30 ; set motor current idle timeout
 M584 X71.0 Y70.0 Z72.0:73.0 E74.0; set axis mapping
 M350 X16 Y16 Z16 E16 I1 ; configure microstepping with interpolation
 M906 X800 Y800 Z2500 E4000 ; set axis driver currents
-M92 X32 Y32 Z1290 E420; configure steps per mm
+M92 X32 Y32 Z6450 E420; configure steps per mm
 M208 X0:550 Y0:550 Z0:500 ; set minimum and maximum axis limits
-M566 X2000 Y2000 Z60 E120; set maximum instantaneous speed changes (mm/min)
-M203 X40000 Y40000 Z400 E3600; set maximum speeds (mm/min)
-M201 X2000 Y2000 Z30 E250; set accelerations (mm/s^2)
+M566 X2000 Y2000 Z20 E120; set maximum instantaneous speed changes (mm/min)
+M203 X40000 Y40000 Z100 E3600; set maximum speeds (mm/min)
+M201 X2000 Y2000 Z20 E250; set accelerations (mm/s^2)
 
 ; Temp sensors
 M308 S0 P"temp0" Y"thermistor" A"Heated Bed" T100000 B4725 C7.06e-8 ; Bed sensor
