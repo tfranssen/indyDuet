@@ -1,10 +1,10 @@
-; Resume printing file "0:/gcodes/Martijn/passchoen nick leestv 4_PP_2h39m.gcode" after print paused at 2025-02-17 15:26
+; Resume printing file "0:/gcodes/Martijn/passchoen nick leestv 4 (1)_PP_2h39m.gcode" after print paused at 2025-02-25 14:57
 M140 P0 S0.0
 M568 P0  A2 S200:200 R140:140
-M486 S0 A"passchoen_nick_leestv_4.stl_id_0_copy_0"
+M486 S0 A"passchoen_nick_leestv_4_1_.stl_id_0_copy_0"
 G21
-M98 P"resurrect-prologue.g" X199.633 Y192.580 Z0.400
-M290 R0 X0.000 Y0.000 Z0.000
+M98 P"resurrect-prologue.g" X292.067 Y225.359 Z7.650
+M290 R0 X0.000 Y0.000 Z0.850
 ; Workplace coordinates
 G10 L2 P1 X0.00 Y0.00 Z0.00
 G10 L2 P2 X0.00 Y0.00 Z0.00
@@ -25,12 +25,12 @@ G92 E0.00000
 M83
 G94
 G17
-M23 "0:/gcodes/Martijn/passchoen nick leestv 4_PP_2h39m.gcode"
-M26 S25341
-G0 F6000 Z2.400
-G0 F6000 X199.633 Y192.580
-G0 F6000 Z0.400
-G1 F3000.0 P0
+M23 "0:/gcodes/Martijn/passchoen nick leestv 4 (1)_PP_2h39m.gcode"
+M26 S147573
+G0 F6000 Z8.800
+G0 F6000 X292.067 Y225.359
+G0 F6000 Z6.800
+G1 F2400.0 P0
 M204 P250.0 T400.0
 G21
 M596 P1
@@ -42,8 +42,8 @@ G92 E0.00000
 M83
 G94
 G17
-M26 S25370
-G1 F3000.0 P0
+M26 S147629
+G1 F2400.0 P0
 M204 P50000.0 T50000.0
 G21
 M596 P0
