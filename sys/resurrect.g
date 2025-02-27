@@ -1,10 +1,10 @@
-; Resume printing file "0:/gcodes/Martijn/Wijk van_John_Probeschuh_Spitze_L_PP_2h52m.gcode" after print paused at 2025-02-27 14:38
+; Resume printing file "0:/gcodes/Martijn/Wijk van_John_Probeschuh_Spitze_L_PP_2h52m.gcode" after print paused at 2025-02-27 17:15
 M140 P0 S0.0
 M568 P0  A2 S200:200 R140:140
 M486 S0 A"Wijk_van_John_Probeschuh_Spitze_L.stl_id_0_copy_0"
 G21
-M98 P"resurrect-prologue.g" X227.704 Y214.982 Z1.050
-M290 R0 X0.000 Y0.000 Z0.650
+M98 P"resurrect-prologue.g" X191.784 Y243.638 Z216.050
+M290 R0 X0.000 Y0.000 Z0.450
 ; Workplace coordinates
 G10 L2 P1 X0.00 Y0.00 Z0.00
 G10 L2 P2 X0.00 Y0.00 Z0.00
@@ -26,11 +26,11 @@ M83
 G94
 G17
 M23 "0:/gcodes/Martijn/Wijk van_John_Probeschuh_Spitze_L_PP_2h52m.gcode"
-M26 S36404
-G0 F6000 Z2.400
-G0 F6000 X227.704 Y214.982
-G0 F6000 Z0.400
-G1 F21000.0 P0
+M26 S3444247
+G0 F6000 Z217.600
+G0 F6000 X191.784 Y243.638
+G0 F6000 Z215.600
+G1 F2220.0 P0
 M204 P250.0 T400.0
 G21
 M596 P1
@@ -42,8 +42,8 @@ G92 E0.00000
 M83
 G94
 G17
-M26 S37132
-G1 F3000.0 P0
+M26 S3444275
+G1 F2220.0 P0
 M204 P50000.0 T50000.0
 G21
 M596 P0
