@@ -1,8 +1,8 @@
-; Resume printing file "0:/gcodes/Martijn/leest_john_mohawk_Teenstuk.gcode" after print paused at 2025-03-03 15:41
+; Resume printing file "0:/gcodes/Martijn/leest_john_mohawk_Teenstuk.gcode" after print paused at 2025-03-03 17:11
 M568 P0  A2 S210:210 R140:140
 M486 S0 A"EXFLOW"
 G21
-M98 P"resurrect-prologue.g" X118.439 Y331.072 Z0.800
+M98 P"resurrect-prologue.g" X123.191 Y135.039 Z5.600
 M290 R0 X0.000 Y0.000 Z0.000
 ; Workplace coordinates
 G10 L2 P1 X0.00 Y0.00 Z0.00
@@ -25,10 +25,10 @@ M83
 G94
 G17
 M23 "0:/gcodes/Martijn/leest_john_mohawk_Teenstuk.gcode"
-M26 S63487
-G0 F6000 Z2.800
-G0 F6000 X118.439 Y331.072
-G0 F6000 Z0.800
+M26 S380342
+G0 F6000 Z7.600
+G0 F6000 X123.191 Y135.039
+G0 F6000 Z5.600
 G1 F2400.0 P0
 M204 P50000.0 T50000.0
 G21
@@ -41,7 +41,7 @@ G92 E0.00000
 M83
 G94
 G17
-M26 S63518
+M26 S380466
 G1 F2400.0 P0
 M204 P50000.0 T50000.0
 G21
