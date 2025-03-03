@@ -37,9 +37,11 @@ M350 X16 Y16 Z16 E16 I1 ; configure microstepping with interpolation
 M906 X800 Y800 Z2500 E4000 ; set axis driver currents
 M92 X32 Y32 Z6450 E420; configure steps per mm
 M208 X0:550 Y0:550 Z0:500 ; set minimum and maximum axis limits
-M566 X2000 Y2000 Z20 E120; set maximum instantaneous speed changes (mm/min)
+M566 X900.00 Y900.00 Z60.00 E120    
+;M566 X2000 Y2000 Z20 E120; set maximum instantaneous speed changes (mm/min)
 M203 X40000 Y40000 Z100 E3600; set maximum speeds (mm/min)
-M201 X2000 Y2000 Z20 E250; set accelerations (mm/s^2)
+M201 X500.00 Y500.00 Z2 E250.00 
+;M201 X2000 Y2000 Z20 E250; set accelerations (mm/s^2)
 
 ; Temp sensors
 M308 S0 P"temp0" Y"thermistor" A"Heated Bed" T100000 B4725 C7.06e-8 ; Bed sensor
