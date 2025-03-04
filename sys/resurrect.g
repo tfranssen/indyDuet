@@ -1,12 +1,12 @@
-; Resume printing file "0:/gcodes/Martijn/Signify_test_pp_1h28m.gcode" after print paused at 2025-03-04 13:55
+; Resume printing file "0:/gcodes/Martijn/Signify_test_pp_1h29m.gcode" after print paused at 2025-03-04 14:50
 M140 P0 S0.0
-M568 P0  A1 S210:210 R140:140
+M568 P0  A2 S210:210 R140:140
 M486 S0 A"Signify_test.stl_id_0_copy_0"
 M486 S1 A"Signify_test.stl_id_1_copy_0"
 M486 S2 A"Signify_test.stl_id_2_copy_0"
 M486 S3 A"Signify_test.stl_id_3_copy_0"
 G21
-M98 P"resurrect-prologue.g" X299.482 Y177.110 Z0.800
+M98 P"resurrect-prologue.g" X332.572 Y90.663 Z0.800
 M290 R0 X0.000 Y0.000 Z0.000
 ; Workplace coordinates
 G10 L2 P1 X0.00 Y0.00 Z0.00
@@ -20,6 +20,7 @@ G10 L2 P8 X0.00 Y0.00 Z0.00
 G10 L2 P9 X0.00 Y0.00 Z0.00
 M596 P0
 M486 S0
+T0
 G54
 M106 S0.00
 M116
@@ -27,9 +28,9 @@ G92 E0.00000
 M83
 G94
 G17
-M23 "0:/gcodes/Martijn/Signify_test_pp_1h28m.gcode"
-M26 S79198
-G0 F6000 X299.482 Y177.110
+M23 "0:/gcodes/Martijn/Signify_test_pp_1h29m.gcode"
+M26 S82486
+G0 F6000 X332.572 Y90.663
 G1 F2400.0 P0
 M204 P250.0 T400.0
 G21
@@ -42,7 +43,7 @@ G92 E0.00000
 M83
 G94
 G17
-M26 S79226
+M26 S83207
 G1 F2400.0 P0
 M204 P50000.0 T50000.0
 G21
