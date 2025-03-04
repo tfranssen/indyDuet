@@ -1,10 +1,12 @@
-; Resume printing file "0:/gcodes/Martijn/leest john mohawk_Teenstuk_pp_4h25m.gcode" after print paused at 2025-03-04 10:25
+; Resume printing file "0:/gcodes/Martijn/Signify_test_pp_3h7m.gcode" after print paused at 2025-03-04 11:45
 M140 P0 S0.0
-M568 P0  A2 S210:210 R140:140
-M486 S0 A"leest_john_mohawk_Teenstuk.stl_id_0_copy_0"
-M486 S1 A"leest_john_mohawk_Heelstuk.stl_id_1_copy_0"
+M568 P0  A1 S210:210 R140:140
+M486 S0 A"Signify_test.stl_id_0_copy_0"
+M486 S1 A"Signify_test.stl_id_1_copy_0"
+M486 S2 A"Signify_test.stl_id_2_copy_0"
+M486 S3 A"Signify_test.stl_id_3_copy_0"
 G21
-M98 P"resurrect-prologue.g" X164.773 Y184.671 Z3.200
+M98 P"resurrect-prologue.g" X331.447 Y72.102 Z0.800
 M290 R0 X0.000 Y0.000 Z0.000
 ; Workplace coordinates
 G10 L2 P1 X0.00 Y0.00 Z0.00
@@ -18,20 +20,19 @@ G10 L2 P8 X0.00 Y0.00 Z0.00
 G10 L2 P9 X0.00 Y0.00 Z0.00
 M596 P0
 M486 S0
-T0
 G54
-M106 S1.00
+M106 S0.00
 M116
 G92 E0.00000
 M83
 G94
 G17
-M23 "0:/gcodes/Martijn/leest john mohawk_Teenstuk_pp_4h25m.gcode"
-M26 S184000
-G0 F6000 Z5.200
-G0 F6000 X164.773 Y184.671
-G0 F6000 Z3.200
-G1 F2400.0 P0
+M23 "0:/gcodes/Martijn/Signify_test_pp_3h7m.gcode"
+M26 S153958
+G0 F6000 Z2.800
+G0 F6000 X331.447 Y72.102
+G0 F6000 Z0.800
+G1 F12000.0 P0
 M204 P250.0 T400.0
 G21
 M596 P1
@@ -43,11 +44,11 @@ G92 E0.00000
 M83
 G94
 G17
-M26 S184385
-G1 F9000.0 P0
+M26 S154068
+G1 F12000.0 P0
 M204 P50000.0 T50000.0
 G21
 M596 P0
-M106 P0 S1.00
+M106 P0 S0.00
 M302 P0
 M24
