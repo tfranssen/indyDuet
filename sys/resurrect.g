@@ -1,8 +1,8 @@
-; Resume printing file "0:/gcodes/Martijn/Signify_test4.gcode" after print paused at 2025-03-06 15:57
+; Resume printing file "0:/gcodes/Martijn/231207-4_vierpoot kern.gcode" after print paused at 2025-03-06 17:58
 M568 P0  A2 S210:210 R140:140
-M486 S0 A"Indy_printer1"
+M486 S0 A"Indy_printer1_pp_signify"
 G21
-M98 P"resurrect-prologue.g" X187.111 Y184.496 Z4.000
+M98 P"resurrect-prologue.g" X325.951 Y270.115 Z10.400
 M290 R0 X0.000 Y0.000 Z0.000
 ; Workplace coordinates
 G10 L2 P1 X0.00 Y0.00 Z0.00
@@ -24,12 +24,12 @@ G92 E0.00000
 M83
 G94
 G17
-M23 "0:/gcodes/Martijn/Signify_test4.gcode"
-M26 S18621
-G0 F6000 Z6.000
-G0 F6000 X187.111 Y184.496
-G0 F6000 Z4.000
-G1 F1637.0 P0
+M23 "0:/gcodes/Martijn/231207-4_vierpoot kern.gcode"
+M26 S263448
+G0 F6000 Z12.400
+G0 F6000 X325.951 Y270.115
+G0 F6000 Z10.400
+G1 F125.0 P0
 M204 P50000.0 T50000.0
 G21
 M596 P1
@@ -41,8 +41,8 @@ G92 E0.00000
 M83
 G94
 G17
-M26 S18744
-G1 F1637.0 P0
+M26 S264360
+G1 F2400.0 P0
 M204 P50000.0 T50000.0
 G21
 M596 P0
