@@ -1,8 +1,8 @@
-; Resume printing file "0:/gcodes/Martijn/Signify_test4.gcode" after print paused at 2025-03-06 13:39
+; Resume printing file "0:/gcodes/Martijn/Signify_test4.gcode" after print paused at 2025-03-06 15:57
 M568 P0  A2 S210:210 R140:140
 M486 S0 A"Indy_printer1"
 G21
-M98 P"resurrect-prologue.g" X199.986 Y201.636 Z12.800
+M98 P"resurrect-prologue.g" X187.111 Y184.496 Z4.000
 M290 R0 X0.000 Y0.000 Z0.000
 ; Workplace coordinates
 G10 L2 P1 X0.00 Y0.00 Z0.00
@@ -25,11 +25,11 @@ M83
 G94
 G17
 M23 "0:/gcodes/Martijn/Signify_test4.gcode"
-M26 S43566
-G0 F6000 Z14.800
-G0 F6000 X199.986 Y201.636
-G0 F6000 Z12.800
-G1 F1603.0 P0
+M26 S18621
+G0 F6000 Z6.000
+G0 F6000 X187.111 Y184.496
+G0 F6000 Z4.000
+G1 F1637.0 P0
 M204 P50000.0 T50000.0
 G21
 M596 P1
@@ -41,8 +41,8 @@ G92 E0.00000
 M83
 G94
 G17
-M26 S43690
-G1 F1603.0 P0
+M26 S18744
+G1 F1637.0 P0
 M204 P50000.0 T50000.0
 G21
 M596 P0
