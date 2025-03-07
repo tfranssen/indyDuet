@@ -1,9 +1,9 @@
-; Resume printing file "0:/gcodes/231207-4 vierpoot kern_PLA_6h3m.gcode" after print paused at 2025-03-07 15:51
+; Resume printing file "0:/gcodes/231207-4 vierpoot kern_PLA_5h50m.gcode" after print paused at 2025-03-07 16:59
 M140 P0 S55.0
 M568 P0  A2 S220:220 R140:140
 M486 S0 A"231207-4_vierpoot_kern.stl_id_0_copy_0"
 G21
-M98 P"resurrect-prologue.g" X234.425 Y282.027 Z4.050
+M98 P"resurrect-prologue.g" X256.010 Y180.126 Z15.050
 M290 R0 X0.000 Y0.000 Z0.300
 ; Workplace coordinates
 G10 L2 P1 X0.00 Y0.00 Z0.00
@@ -25,12 +25,12 @@ G92 E0.00000
 M83
 G94
 G17
-M23 "0:/gcodes/231207-4 vierpoot kern_PLA_6h3m.gcode"
-M26 S645793
-G0 F6000 Z5.750
-G0 F6000 X234.425 Y282.027
-G0 F6000 Z3.750
-G1 F2400.0 P0
+M23 "0:/gcodes/231207-4 vierpoot kern_PLA_5h50m.gcode"
+M26 S2573825
+G0 F6000 Z16.750
+G0 F6000 X256.010 Y180.126
+G0 F6000 Z14.750
+G1 F1800.0 P0
 M204 P250.0 T400.0
 G21
 M596 P1
@@ -42,8 +42,8 @@ G92 E0.00000
 M83
 G94
 G17
-M26 S645822
-G1 F2400.0 P0
+M26 S2574015
+G1 F3000.0 P0
 M204 P50000.0 T50000.0
 G21
 M596 P0
