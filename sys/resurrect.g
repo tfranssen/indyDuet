@@ -1,10 +1,9 @@
-; Resume printing file "0:/gcodes/231207-4 vierpoot kern_PLA_5h50m.gcode" after print paused at 2025-03-07 16:59
-M140 P0 S55.0
-M568 P0  A2 S220:220 R140:140
-M486 S0 A"231207-4_vierpoot_kern.stl_id_0_copy_0"
+; Resume printing file "0:/gcodes/Martijn/passchoen_nick_leestv_4_(1).gcode" after print paused at 2025-03-10 14:27
+M568 P0  A2 S210:210 R140:140
+M486 S0 A"Indy_printer1_pp_signify"
 G21
-M98 P"resurrect-prologue.g" X256.010 Y180.126 Z15.050
-M290 R0 X0.000 Y0.000 Z0.300
+M98 P"resurrect-prologue.g" X268.231 Y262.484 Z2.200
+M290 R0 X0.000 Y0.000 Z0.000
 ; Workplace coordinates
 G10 L2 P1 X0.00 Y0.00 Z0.00
 G10 L2 P2 X0.00 Y0.00 Z0.00
@@ -25,13 +24,13 @@ G92 E0.00000
 M83
 G94
 G17
-M23 "0:/gcodes/231207-4 vierpoot kern_PLA_5h50m.gcode"
-M26 S2573825
-G0 F6000 Z16.750
-G0 F6000 X256.010 Y180.126
-G0 F6000 Z14.750
-G1 F1800.0 P0
-M204 P250.0 T400.0
+M23 "0:/gcodes/Martijn/passchoen_nick_leestv_4_(1).gcode"
+M26 S37959
+G0 F6000 Z4.200
+G0 F6000 X268.231 Y262.484
+G0 F6000 Z2.200
+G1 F1699.0 P0
+M204 P50000.0 T50000.0
 G21
 M596 P1
 M486 S-1
@@ -42,8 +41,8 @@ G92 E0.00000
 M83
 G94
 G17
-M26 S2574015
-G1 F3000.0 P0
+M26 S39695
+G1 F1699.0 P0
 M204 P50000.0 T50000.0
 G21
 M596 P0
