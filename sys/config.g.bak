@@ -18,7 +18,7 @@ M569.1 P70.0 T3 E5:9 R100 I0 D0 ; driver 70.0 has a magnetic encoder
 M569.1 P71.0 T3 E5:9 R100 I0 D0 ; driver 71.0 has a magnetic encoder
 M569.1 P72.0 T3 E5:9 R100 I0 D0 ; driver 72.0 has a magnetic encoder
 M569.1 P73.0 T3 E2:4 R100 I0 D0 ; driver 73.0 has a magnetic encoder
-M569.1 P74.0 T3 E5:9R100 I0 D0 ; driver 74.0 has a magnetic encoder
+M569.1 P74.0 T3 E5:9 R100 I0 D0 ; driver 74.0 has a magnetic encoder
 
 ; Smart Drivers
 M569 P70.0 S0 D5 ; driver 70.0 goes backwards (X axis)

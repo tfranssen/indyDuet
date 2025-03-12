@@ -35,7 +35,7 @@ M84 S30 ; set motor current idle timeout
 M584 X71.0 Y70.0 Z72.0:73.0 E74.0; set axis mapping
 M350 X16 Y16 Z16 E16 I1 ; configure microstepping with interpolation
 M906 X800 Y800 Z2500 E4000 ; set axis driver currents
-M92 X32 Y32 Z6450 E420; configure steps per mm
+M92 X32.32 Y32.32 Z6450 E420; configure steps per mm
 M208 X0:550 Y0:550 Z0:500 ; set minimum and maximum axis limits
 M566 X875.00 Y75000 Z60.00 E225   
 ;M566 X2000 Y2000 Z20 E175; set maximum instantaneous speed changes (mm/min)
