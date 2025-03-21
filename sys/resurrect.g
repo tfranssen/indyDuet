@@ -1,9 +1,9 @@
-; Resume printing file "0:/gcodes/Martijn/retraction_test_indyprinter.gcode" after print paused at 2025-03-19 16:28
+; Resume printing file "0:/gcodes/Martijn/140559_Leisten_links__Beenstuk.gcode" after print paused at 2025-03-21 10:53
 M568 P0  A2 S210:210 R140:140
 M486 S0 A"Process 1"
 G21
-M98 P"resurrect-prologue.g" X106.263 Y76.673 Z13.800
-M290 R0 X0.000 Y0.000 Z-0.600
+M98 P"resurrect-prologue.g" X173.404 Y86.683 Z5.600
+M290 R0 X0.000 Y0.000 Z0.000
 ; Workplace coordinates
 G10 L2 P1 X0.00 Y0.00 Z0.00
 G10 L2 P2 X0.00 Y0.00 Z0.00
@@ -24,10 +24,12 @@ G92 E0.00000
 M83
 G94
 G17
-M23 "0:/gcodes/Martijn/retraction_test_indyprinter.gcode"
-M26 S669661
-G0 F6000 X106.263 Y76.673
-G1 F2400.0 P0
+M23 "0:/gcodes/Martijn/140559_Leisten_links__Beenstuk.gcode"
+M26 S354479
+G0 F6000 Z7.600
+G0 F6000 X173.404 Y86.683
+G0 F6000 Z5.600
+G1 F1200.0 P0
 M204 P50000.0 T50000.0
 G21
 M596 P1
@@ -39,8 +41,8 @@ G92 E0.00000
 M83
 G94
 G17
-M26 S669688
-G1 F2400.0 P0
+M26 S355301
+G1 F1243.0 P0
 M204 P50000.0 T50000.0
 G21
 M596 P0
