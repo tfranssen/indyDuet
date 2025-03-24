@@ -1,8 +1,8 @@
-; Resume printing file "0:/gcodes/Hole_tollerance_test.gcode" after print paused at 2025-03-24 11:43
+; Resume printing file "0:/gcodes/pa_test.gcode" after print paused at 2025-03-24 13:35
 M568 P0  A2 S210:210 R140:140
 M486 S0 A"Process 1"
 G21
-M98 P"resurrect-prologue.g" X263.637 Y195.006 Z20.000
+M98 P"resurrect-prologue.g" X233.624 Y273.688 Z20.000
 M290 R0 X0.000 Y0.000 Z0.000
 ; Workplace coordinates
 G10 L2 P1 X0.00 Y0.00 Z0.00
@@ -24,12 +24,12 @@ G92 E0.00000
 M83
 G94
 G17
-M23 "0:/gcodes/Hole_tollerance_test.gcode"
-M26 S563033
+M23 "0:/gcodes/pa_test.gcode"
+M26 S91127
 G0 F6000 Z22.000
-G0 F6000 X263.637 Y195.006
+G0 F6000 X233.624 Y273.688
 G0 F6000 Z20.000
-G1 F2400.0 P0
+G1 F1341.0 P0
 M204 P50000.0 T50000.0
 G21
 M596 P1
@@ -41,8 +41,8 @@ G92 E0.00000
 M83
 G94
 G17
-M26 S563680
-G1 F2400.0 P0
+M26 S91158
+G1 F1341.0 P0
 M204 P50000.0 T50000.0
 G21
 M596 P0
