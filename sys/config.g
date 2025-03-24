@@ -49,6 +49,10 @@ M308 S1 P"1.spi.cs0" Y"rtdmax31865" A"Nozzle" W2 F50     ; configure sensor #1
 M308 S2 P"1.spi.cs1" Y"rtdmax31865" A"Bandheater" W2 F50 ; configure sensor #2
 M308 S3 P"1.temp0" Y"pt1000" A"Inlet"              ; configure sensor #3
 
+
+M308 S7 P"1.io5.in" Y"linear-analog" A"Feeder" ; configure hopper sensor
+
+
 ; Heaters
 M950 H0 C"out1" T0                ; create bed heater
 M143 H0 P0 T0 C0 S140 A0          ; configure heater monitor #0 for bed heater
