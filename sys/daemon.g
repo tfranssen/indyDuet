@@ -11,4 +11,10 @@ while true
         ; M118 P0 L2 S{"Water temp ok"}
         M42 P1 S0  ; Turn off pump
 
+        ; Control pellet feeder based on LDR sensor with pelletFeeding condition
+    if sensors.analog[7].lastReading > 40 && global.pelletFeeding
+        M42 P3 S1  ; Turn on feeder
+    elif sensors.analog[7].lastReading < 40 || !global.pelletFeeding
+        M42 P3 S0  ; Turn off feeder
+
     G4 S0.2   ; Small delay to prevent overloading

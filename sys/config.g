@@ -90,8 +90,11 @@ M568 P0 R0 S0      ; set initial tool #0 active and standby temperatures to 0C
 M950 P0 C"out2"
 M950 P1 C"out7"
 M950 P2 C"out8"
+M950 P3 C"out3"
+
 
 global waterTemp = 60
+global pelletFeeding = false
 
 ; Miscellaneous
 T0 ; select first tool
