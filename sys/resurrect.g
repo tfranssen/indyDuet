@@ -1,10 +1,10 @@
-; Resume printing file "0:/gcodes/Martijn/140559 Leisten rechts__Heelstuk_PP_3h30m.gcode" after print paused at 2025-03-27 15:56
+; Resume printing file "0:/gcodes/Martijn/140559 Leisten rechts__Heelstuk_PP_3h30m.gcode" after print paused at 2025-03-27 17:26
 M140 P0 S0.0
 M568 P0  A2 S210:210 R140:140
 M486 S0 A"140559_Leisten_rechts__Heelstuk.stl_id_0_copy_0"
 M486 S1 A"140559_Leisten_rechts__Teenstuk.stl_id_1_copy_0"
 G21
-M98 P"resurrect-prologue.g" X284.555 Y409.357 Z14.400
+M98 P"resurrect-prologue.g" X267.484 Y377.134 Z4.000
 M290 R0 X0.000 Y0.000 Z0.000
 ; Workplace coordinates
 G10 L2 P1 X0.00 Y0.00 Z0.00
@@ -27,11 +27,11 @@ M83
 G94
 G17
 M23 "0:/gcodes/Martijn/140559 Leisten rechts__Heelstuk_PP_3h30m.gcode"
-M26 S693787
-G0 F6000 Z16.400
-G0 F6000 X284.555 Y409.357
-G0 F6000 Z14.400
-G1 F900.0 P0
+M26 S192461
+G0 F6000 Z6.000
+G0 F6000 X267.484 Y377.134
+G0 F6000 Z4.000
+G1 F2400.0 P0
 M204 P500.0 T400.0
 G21
 M596 P1
@@ -43,7 +43,7 @@ G92 E0.00000
 M83
 G94
 G17
-M26 S694600
+M26 S193381
 G1 F2400.0 P0
 M204 P50000.0 T50000.0
 G21
