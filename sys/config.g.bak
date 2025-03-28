@@ -94,6 +94,7 @@ M950 P3 C"out3"
 
 
 global waterTemp = 60
+global pelletFeeding = false
 
 ; Miscellaneous
 T0 ; select first tool
