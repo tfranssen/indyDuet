@@ -41,7 +41,7 @@ M208 X0:550 Y0:550 Z0:500 ; set minimum and maximum axis limits
 M566 X1000 Y1000 Z20 E150; set maximum instantaneous speed changes (mm/min)
 M203 X8000 Y8000 Z125 E6400; set maximum speeds (mm/min)
 
-M201 X320 Y320 Z20 E200; set accelerations (mm/s^2)
+M201 X321 Y321 Z20 E200; set accelerations (mm/s^2)
 
 ; Temp sensors
 M308 S0 P"temp0" Y"thermistor" A"Heated Bed" T100000 B4725 C7.06e-8 ; Bed sensor

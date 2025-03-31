@@ -8,7 +8,7 @@
 G90 ; absolute coordinates
 M83 ; relative extruder moves
 M550 P"indyprinter" ; set hostname
-
+ 
 ; Wait a moment for the CAN expansion boards to become available
 G4 S2
 

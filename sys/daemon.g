@@ -12,9 +12,9 @@ while true
         M42 P1 S0  ; Turn off pump
 
         ; Control pellet feeder based on LDR sensor with pelletFeeding condition
-    if sensors.analog[7].lastReading > 90 && global.pelletFeeding
+    if sensors.analog[7].lastReading > 85 && global.pelletFeeding
         M42 P3 S1  ; Turn on feeder
-    elif sensors.analog[7].lastReading < 130|| !global.pelletFeeding
+    elif !global.pelletFeeding
         M42 P3 S0  ; Turn off feeder
 
     G4 S0.2   ; Small delay to prevent overloading
