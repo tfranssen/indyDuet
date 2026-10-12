@@ -11,7 +11,7 @@ M550 P"indyprinter" ; set hostname
  
 ; Wait a moment for the CAN expansion boards to become available
 G4 S2
- 
+
 
 ; Closed-Loop Drivers
 M569.1 P70.0 T3 E5:9 R100 I0 D0 ; driver 70.0 has a magnetic encoder
@@ -95,6 +95,13 @@ M950 P3 C"out3"
 
 global waterTemp = 60
 global pelletFeeding = false
+global canCheckAbort = true
+global canBoardsOffline = ""
+global canCheckCounter = 0
 
 ; Miscellaneous
 T0 ; select first tool
+
+; Fail loud at end of config if any expected board never came online
+set global.canCheckAbort = true
+M98 P"check-can.g"

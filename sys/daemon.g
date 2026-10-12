@@ -17,4 +17,16 @@ while true
     elif sensors.analog[7].lastReading < 85|| !global.pelletFeeding
         M42 P3 S0  ; Turn off feeder
 
+    ; Every ~5s: warn if an expected CAN board never came online / is not running
+    ; (boards that drop later are already reported by RRF; missing-from-start is not)
+    set global.canCheckCounter = global.canCheckCounter + 1
+    if global.canCheckCounter >= 25
+        set global.canCheckCounter = 0
+        set global.canCheckAbort = false
+        M98 P"check-can.g"
+        if global.canBoardsOffline != ""
+            M118 P0 L1 S{"CAN boards offline:" ^ global.canBoardsOffline}
+        ; end if
+    ; end if
+
     G4 S0.2   ; Small delay to prevent overloading
